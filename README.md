@@ -4,7 +4,7 @@ Common libraries for Play Hub Services
 
 ## Create and Publish package
 ```s
-VERSION=1.6.0
+VERSION=1.7.0
 OWNER="playhuborg"
 GH_PAT=[GitHubToken]
 
