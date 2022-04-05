@@ -23,6 +23,7 @@ namespace Play.Common.Identity
 
                 options.Authority = serviceSettings.Authority;
                 options.Audience = serviceSettings.ServiceName;
+                options.RequireHttpsMetadata = serviceSettings.IdentityRequiredHttps;
                 options.MapInboundClaims = false;
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
