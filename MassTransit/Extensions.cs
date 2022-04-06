@@ -21,7 +21,7 @@ namespace Play.Common.MassTransit
             {
                 configure.AddConsumers(Assembly.GetEntryAssembly());
 
-                configure.UsingPlayEconomyRabbitMq(configureRetries);
+                configure.UsingPlayHubRabbitMq(configureRetries);
             });
 
             services.AddMassTransitHostedService();
@@ -29,7 +29,7 @@ namespace Play.Common.MassTransit
             return services;
         }
 
-        public static void UsingPlayEconomyRabbitMq(
+        public static void UsingPlayHubRabbitMq(
             this IServiceCollectionBusConfigurator configure,
             Action<IRetryConfigurator> configureRetries = null)
         {
